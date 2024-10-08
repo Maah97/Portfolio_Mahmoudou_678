@@ -1,7 +1,7 @@
-function Projet() {
+function Footer() {
     return (
         <div></div>
     )
 };
 
-export default Projet;
+export default Footer;

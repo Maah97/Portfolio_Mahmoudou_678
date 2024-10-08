@@ -4,8 +4,9 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/home';
 import Projet from './pages/projet';
 import Error from './pages/error'
-import Header from "./composants/Header";
-import Footer from "./composants/Footer";
+import Header from "./components/header";
+import Footer from "./components/footer";
+import './styles_SCSS/app.scss';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

@@ -1,0 +1,135 @@
+.presentation {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    background-color: #d4d2d2c0;
+    .bloc-de-presentation {
+        width: 100%;
+        height: auto;
+        padding: 20px 20px 20px 0px;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 70px;
+        .icones-reseaux-sociaux {
+            align-self: center;
+            width: 100px;
+            height: 200px;
+            border-radius: 0px 10px 10px 0px;
+            border-top: 1px solid #e6d6ff;
+            border-right: 1px solid #e6d6ff;
+            border-bottom: 1px solid #e6d6ff;
+            box-shadow: 6px 6px 25px rgba(0, 0, 0, 0.507);
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction: column;
+            background-color: rgb(252, 252, 252);
+            i {
+                font-size: 30px;
+                color: black;
+            }
+            #linkedin {
+                color: rgb(28, 126, 255);
+            }
+            #twitter {
+                width: 25px;
+                height: 25px;
+            }
+        }
+        .txt-presentation {
+            padding: 50px 50px 30px 50px;
+            color: rgba(69, 12, 143, 0.788);
+            h1 {
+                font-size: 40px;
+                text-align: left;
+                font-weight: 800;
+                line-height: 50px;
+                margin-bottom: 20px;
+            }
+            p {
+                text-align: justify;
+                font-size: 24px;
+                font-weight: 300;
+                line-height: 40px;
+                margin-bottom: 50px;
+            }
+            a {
+                display: block;
+                width: 250px;
+                height: 50px;
+                @include flexCenter;
+                margin: 0px auto;
+                border: 2px solid rgba(69, 12, 143, 0.788);
+                box-shadow: 2px 2px 5px rgba(69, 12, 143, 0.863);
+                background-color: #fff;
+                font-size: 24px;
+                font-weight: 600;
+                text-align: center;
+                text-decoration: none;
+                color: rgba(69, 12, 143, 0.788);
+                &:hover {
+                    background-color: rgba(69, 12, 143, 0.788);
+                    color: #fff;
+                    border: 2px solid #fff;
+                    box-shadow: 2px 2px 5px rgb(255, 255, 255);
+                }
+            }
+
+        }
+        .image-presentation-et-background {
+            .ordi {
+                width: 500px;
+                height: 400px;
+            }
+            .changement-background {
+                height: 40px;
+                width: 90px;
+                margin: 0px auto;
+                border-radius: 30px;
+                background-color: #00000056;
+                margin-top: 20px;
+                i {
+                    font-size: 25px;
+                    margin: 10px;
+                }
+                #sun {
+                    position: relative;
+                    top: -100%;
+                    color: #e7eb0b;
+                }
+                #moon {
+                    position: relative;
+                    top: -100%;
+                    color: #363636;
+                }
+                .interrupteur-background {
+                    top: 6%;
+                    left: 5%;
+                    position: relative;
+                    z-index: 10;
+                    width: 35px;
+                    height: 35px;
+                    background-color: #ffffff;
+                    border-radius: 9999px;
+                    margin-left: 55%;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    .langage {
+        width: 100px;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .Fr, .En {
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+        }
+    }
+}
