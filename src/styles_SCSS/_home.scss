@@ -1,0 +1,5 @@
+.page-accueil {
+    width: 100%;
+    @include flexCenter;
+    flex-direction: column;
+}

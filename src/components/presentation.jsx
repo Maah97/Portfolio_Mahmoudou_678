@@ -5,7 +5,7 @@ import imgTwitter from '../assets/twitter.png';
 
 function Presentation() {
     return (
-        <section className="presentation">
+        <article className="presentation">
             <div className='bloc-de-presentation'>
                 <div className='icones-reseaux-sociaux'>
                     <a href="www.linkedin.com/in/mahmoudou-abdoul-nganiyyou-2b805a180" rel='noreferrer' target='_blank'>
@@ -36,7 +36,7 @@ function Presentation() {
                 <img className='Fr' src= {FrIcone} alt="Icone langue française" />
                 <img className='En' src= {EnIcone} alt="Icone langue anglaise" />
             </div>
-        </section>
+        </article>
     )
 };
 

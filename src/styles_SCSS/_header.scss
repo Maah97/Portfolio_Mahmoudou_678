@@ -6,6 +6,8 @@ header {
     align-items: center;
     position: fixed;
     background-color: #FFF;
+    z-index: 1000;
+    border-bottom: 2px solid rgb(33, 0, 59);
     .photo-et-nom {
         display: flex;
         width: 310px;

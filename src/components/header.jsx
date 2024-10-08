@@ -11,6 +11,7 @@ function Header() {
             <nav>
                 <NavLink className='navigation' to="/">HOME</NavLink>
                 <a className='navigation' href="#about">ABOUT</a>
+                <a className='navigation' href="#skills">SKILLS</a>
                 <a className='navigation' href="#projets">PROJECTS</a>
                 <a className='navigation' href="#contact">CONTACT</a>
             </nav>

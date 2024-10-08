@@ -1,8 +1,15 @@
 import Presentation from "../components/presentation";
+import About from "../components/About"
+import Skills from "../components/skills";
 
 function Home() {
     return (
-        <Presentation />
+        <section className="page-accueil">
+            <Presentation />
+            <About />
+            <Skills />
+        </section>
+        
     )
 };
 
