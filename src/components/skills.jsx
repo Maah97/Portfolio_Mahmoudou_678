@@ -9,27 +9,27 @@ function Skills() {
             <div className="ligne"></div>
             <div className="bloc-icones-competences">
                 <div className='carte-competence html'>
-                    <i class="fa-brands fa-html5"></i>
+                    <i className="fa-brands fa-html5"></i>
                     <p>HTML5</p>
                 </div>
                 <div className="carte-competence css">
-                    <i class="fa-brands fa-css3"></i>
+                    <i className="fa-brands fa-css3"></i>
                     <p>CSS3</p>
                 </div>
                 <div className="carte-competence sass">
-                    <i class="fa-brands fa-sass"></i>
+                    <i className="fa-brands fa-sass"></i>
                     <p>Sass</p>
                 </div>
                 <div className="carte-competence js">
-                    <i class="fa-brands fa-js"></i>
+                    <i className="fa-brands fa-js"></i>
                     <p>JavaScript</p>
                 </div>
                 <div className="carte-competence react">
-                    <i class="fa-brands fa-react"></i>
+                    <i className="fa-brands fa-react"></i>
                     <p>ReactJS</p>
                 </div>
                 <div className="carte-competence node">
-                    <i class="fa-brands fa-node"></i>
+                    <i className="fa-brands fa-node"></i>
                     <p>NodeJS</p>
                 </div>
                 <div className="carte-competence mongodb">

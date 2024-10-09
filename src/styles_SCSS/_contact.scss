@@ -1,0 +1,146 @@
+.contact {
+    width: 100%;
+    .svg-curve {
+        fill: none;
+        width: 100%;
+        display: block;
+        path {
+            fill: #d4d2d2c0;
+        }
+    }
+    .txt-et-formulaire-de-contact {
+        width: 100%;
+        @include flexCenter;
+        flex-direction: column;
+        margin-bottom: 30px;
+        h2 {
+            text-align: center;
+            font-size: 40px;
+            font-weight: 7000;
+            margin-bottom: 10px;
+        }
+        .ligne {
+            height: 1px;
+            width: 210px;
+            background: #000;
+            margin-bottom: 30px;
+            border-radius: 999px;
+            &:nth-child(2) {
+                margin-bottom: 30px;
+                height: 4px;
+                width: 70px;
+            }
+        }
+        p {
+            max-width: 900px;
+            font-size: 18px;
+            font-weight: 300;
+            text-align: center;
+            margin-bottom: 30px;
+            line-height: 35px;
+        }
+        h3 {
+            text-align: center;
+            font-size: 30px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            &:nth-child(8) {
+                margin-bottom: 50px;
+            }
+        }
+        a {
+            text-decoration: none;
+            display: block;
+            width: 100%;
+            max-width: 650px;
+            height: auto;
+            margin-bottom: 60px;
+            .adresse-mail {
+                background-color: rgb(201, 201, 201);
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 10px 10px;
+                border-radius: 10px;
+                cursor: pointer;
+                p {
+                    margin-bottom: 0px;
+                    font-size: 23px;
+                    color: rgb(67, 1, 153);
+                }
+                i {
+                    font-size: 35px;
+                    color: rgb(67, 1, 153);
+                }
+                &:hover {
+                    background-color: rgba(121, 121, 121, 0.822);
+                }
+            }
+        }
+        .formulaire {
+            width: 100%;
+            max-width: 1000px;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+            background-color: rgb(230, 230, 230);
+            padding: 60px 60px;
+            .label-et-input {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                label {
+                    font-size: 17px;
+                    font-weight: 700;
+                    text-align: left;
+                    margin-bottom: 17px;
+                    color: #000000c9;
+                }
+                input {
+                    height: 57px;
+                    width: 100%;
+                    padding: 10px 15px;
+                    font-size: 22px;
+                    font-weight: 300;
+                    border: none;
+                    border-radius: 7px;
+                    font-family: "Geologica", serif;
+                    &:focus {
+                        outline-color: #6f00ffa8;
+                    }
+                }
+                textarea {
+                    height: 250px;
+                    width: 100%;
+                    padding: 10px 15px;
+                    font-size: 22px;
+                    font-weight: 300;
+                    border: none;
+                    border-radius: 7px;
+                    &:focus {
+                        outline-color: #6f00ffa8;
+                    }
+                }
+            }
+            #submit {
+                width: 100%;
+                max-width: 300px;
+                height: 50px;
+                font-size: 23px;
+                border: none;
+                background-color: #757575;
+                color: #fff;
+                text-transform: uppercase;
+                cursor: pointer;
+                border-radius: 10px;
+                font-family: "Geologica", serif;
+                &:hover {
+                    background-color: #6f00ff;
+                }
+            }
+        }
+    }
+}

@@ -9,10 +9,10 @@ function Presentation() {
             <div className='bloc-de-presentation'>
                 <div className='icones-reseaux-sociaux'>
                     <a href="www.linkedin.com/in/mahmoudou-abdoul-nganiyyou-2b805a180" rel='noreferrer' target='_blank'>
-                        <i id='linkedin' class="fa-brands fa-linkedin"></i>
+                        <i id='linkedin' className="fa-brands fa-linkedin"></i>
                     </a>
                     <a href="https://github.com/Maah97" rel='noreferrer' target='_blank'>
-                        <i id='github' class="fa-brands fa-github"></i>
+                        <i id='github' className="fa-brands fa-github"></i>
                     </a>
                     <a href="https://x.com/mahmoudouabdoul" rel='noreferrer' target='_blank'>
                         <img id='twitter' src={imgTwitter} alt="X anciennement twitter" />
