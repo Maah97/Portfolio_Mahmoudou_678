@@ -8,7 +8,7 @@ function Presentation() {
         <article className="presentation">
             <div className='bloc-de-presentation'>
                 <div className='icones-reseaux-sociaux'>
-                    <a href="www.linkedin.com/in/mahmoudou-abdoul-nganiyyou-2b805a180" rel='noreferrer' target='_blank'>
+                    <a href="https://linkedin.com/in/mahmoudou-abdoul-nganiyyou-2b805a180" rel='noreferrer' target='_blank'>
                         <i id='linkedin' className="fa-brands fa-linkedin"></i>
                     </a>
                     <a href="https://github.com/Maah97" rel='noreferrer' target='_blank'>
