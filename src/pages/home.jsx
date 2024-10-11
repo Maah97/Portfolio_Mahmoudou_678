@@ -2,6 +2,7 @@ import Presentation from "../components/presentation";
 import About from "../components/About"
 import Skills from "../components/skills";
 import Contact from "../components/contact";
+import Projets from "../components/projets";
 
 
 function Home() {
@@ -10,6 +11,7 @@ function Home() {
             <Presentation />
             <About />
             <Skills />
+            <Projets />
             <Contact />
         </section>
         

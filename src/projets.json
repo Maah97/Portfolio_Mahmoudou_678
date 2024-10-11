@@ -1,0 +1,21 @@
+[
+    {
+        "id": "1",
+        "title": "Homepage of the travel agency Booki",
+        "date": "May 2024",
+        "categorie": "Front-end development and responsive",
+        "link": "https://github.com/Maah97/Projet-2-Page-d-accueil-Booki",
+        "technologie":[
+            "html5",
+            "css3"
+        ],
+        "description": "In this project we are responsible for creating the homepage of a travel agency Booki that will allow users to find accommodation and activities in the city of their choice. This page is responsive and must adapt to different screens (Desktop, tablet and phone) The integration of the site interface is done with HTML and CSS code.",
+        "cover": "http://localhost:3000/static/media/cover_projet_1.9f9cb50545b169f0553a.png",
+        "pictures": [
+            "./assets/images_booki/Desktop.png",
+            "./assets/images_booki/Large_Desktop.png",
+            "./assets/images_booki/Mobile.png",
+            "./assets/images_booki/Tablette.png"
+        ]
+    }
+]
