@@ -1,0 +1,53 @@
+.caroussel-pitures {
+    width: 100%;
+    height: 800px;
+    max-width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    overflow: hidden;
+    position: relative;
+    margin-top: 20px;
+    box-shadow: 4px 10px 20px #0000003d;
+    .carroussel-container {
+        width: 100%;
+        height: 100%;
+        border-radius: 25px;
+        display: flex;
+        transition: transform 1s ease-in-out;
+        .pictures {
+            width: 100%;
+            height: 100%;
+            object-fit: unset;
+            flex-shrink: 0;
+        }
+    }
+    .fleche-precedent {
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        top: 50%;
+        left: 15px;
+        transform: translateY(-50%);
+        background-color: rgba(0, 0, 0, 0.363);
+        border-radius: 9999px;
+        @include flexCenter;
+        cursor: pointer;
+        &:hover {
+            background-color: rgba(0, 0, 0, 0.651);
+        }
+        i {
+            font-weight: 46.68px;
+            font-size: 30px;
+            color: rgb(255, 255, 255);
+        }
+    }
+    .fleche-suivant {
+        @extend .fleche-precedent;
+        right: 15px;
+        left: auto;
+    }
+}

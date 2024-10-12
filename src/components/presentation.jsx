@@ -2,6 +2,7 @@ import ImgOrdi from '../assets/ordi.png';
 import FrIcone from '../assets/fr-language-icon.png';
 import EnIcone from '../assets/en-language-icon.png';
 import imgTwitter from '../assets/twitter.png';
+import CV from '../assets/CV_MAHMOUDOU_ANGLAIS.pdf'
 
 function Presentation() {
     return (
@@ -21,7 +22,7 @@ function Presentation() {
                 <div className='txt-presentation'>
                     <h1>HELLO, WELCOME TO MY PORTFOLIO OF WEB DEVELOPPER</h1>
                     <p>My name is Mahmoudou Abdoul Nganiyyou and i'm a Result-Oriented fullstack Developer building and managing Websites and Web Applications that leads to the success of the overall product</p>
-                    <a href="../assets/CV_MAHMOUDOU_ANGLAIS.pdf" download="CV.pdf" rel='noreferrer' target='_blank'>Download my CV</a>
+                    <a href={CV} download="CV_Mahmoudou.pdf" rel='noreferrer' target='_blank'>Download my CV</a>
                 </div>
                 <div className='image-presentation-et-background'>
                     <img className='ordi' src={ ImgOrdi } alt="Ordinateur de travail d'un developpeur web" />

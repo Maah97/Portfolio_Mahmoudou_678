@@ -4,7 +4,7 @@ import logoNotion from '../assets/notion-logo.svg'
 
 function Skills() {
     return(
-        <article id="skills" className="competences">
+        <article className="competences">
             <h2>SKILLS</h2>
             <div className="ligne"></div>
             <div className="bloc-icones-competences">

@@ -2,6 +2,8 @@ import { NavLink } from 'react-router-dom';
 import photoProphile from '../assets/Photo-profil.jfif'
 
 function Header() {
+    const urlActuelle = window.location.href;
+    const addresseRacine = urlActuelle.split("/")[2];
     return (
         <header>
             <div className='photo-et-nom'>
@@ -10,10 +12,10 @@ function Header() {
             </div>
             <nav>
                 <NavLink className='navigation' to="/">HOME</NavLink>
-                <a className='navigation' href="#about">ABOUT</a>
-                <a className='navigation' href="#skills">SKILLS</a>
-                <a className='navigation' href="#projets">PROJECTS</a>
-                <a className='navigation' href="#contact">CONTACT</a>
+                <a className='navigation' href={`http://${addresseRacine}/#about`}>ABOUT</a>
+                <a className='navigation' href={`http://${addresseRacine}/#skills`}>SKILLS</a>
+                <a className='navigation' href={`http://${addresseRacine}/#projects`}>PROJECTS</a>
+                <a className='navigation' href={`http://${addresseRacine}/#contact`}>CONTACT</a>
             </nav>
         </header>
     )

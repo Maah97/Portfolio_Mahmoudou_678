@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
-import MongoDB from '../assets/mongodb.svg';
-import Lighthouse from '../assets/lighthouse.svg'
+import MongoDB from '../assets/mongodb2.svg';
+import Lighthouse from '../assets/lighthouse2.svg'
 import Notion from '../assets/notion-logo.svg'
 
 function CardProjet(props) {
@@ -10,11 +10,11 @@ function CardProjet(props) {
                 <img src={props.imgCover} alt="site booki" className='img-cover' />
                 <p>{props.titre}</p>
                 <div className="ligne"></div>
-                <p>{props.categorie}</p>
+                <p>{props.category}</p>
                 <div className='technos'>
                     {
-                        props.technos.map((techno) => (
-                            <div className='techno'>
+                        props.technos.map((techno,i) => (
+                            <div key={i} className='techno'>
                                 {techno === "MongoDB" ? <img src={MongoDB} alt="logo MongoDB" /> : techno === "Lighthouse" ? <img src={Lighthouse} alt="logo MongoDB" /> : techno === "Notion" ? <img src={Notion} alt="logo MongoDB" />
                                 : <i className={`fa-brands fa-${techno}`}></i>}
                                 <p>{techno}</p>

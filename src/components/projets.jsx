@@ -12,11 +12,11 @@ function Projets() {
             <div className='liste-projets'>
                 {
                     projets.map((projet) => (
-                        <CardProjet key={projet.id} id={projet.id} titre={projet.title} categorie={projet.categorie} technos={projet.technologie} imgCover={projet.cover} />
+                        <CardProjet key={projet.id} id={projet.id} titre={projet.title} category={projet.categorie} technos={projet.technologie} imgCover={projet.cover} />
                     ))
                }
             </div>
-            <svg className="svg-curve" viewBox="0 0 1440 79" xmlns="http://www.w3.org/2000/svg">
+            <svg id="contact" className="svg-curve" viewBox="0 0 1440 79" xmlns="http://www.w3.org/2000/svg">
                 <path d="M-100 0C-100 0 218.416 55.835 693.5 55.835C1168.58 55.835 1487 0 1487 0V79H-100V0Z"></path>
             </svg>
         </article>
