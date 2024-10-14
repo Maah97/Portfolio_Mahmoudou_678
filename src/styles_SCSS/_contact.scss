@@ -36,7 +36,7 @@
         font-size: 30px;
         font-weight: 700;
         margin-bottom: 20px;
-        color: rgba(69, 12, 143, 0.788);;
+        color: rgba(69, 12, 143, 0.788);
         &:nth-child(8) {
             margin-bottom: 50px;
         }
@@ -103,6 +103,7 @@
                 border-radius: 7px;
                 font-family: "Geologica", serif;
                 background-color: rgb(231, 231, 231);
+                color: rgba(69, 12, 143, 0.788);
                 &::placeholder {
                     color: rgba(69, 12, 143, 0.459);
                 }
@@ -119,6 +120,7 @@
                 border: none;
                 border-radius: 7px;
                 background-color: rgb(231, 231, 231);
+                color: rgba(69, 12, 143, 0.788);
                 &::placeholder {
                     color: rgba(69, 12, 143, 0.459);
                 }

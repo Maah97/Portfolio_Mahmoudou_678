@@ -23,15 +23,14 @@ function Contact() {
         },5000)
     }
     return (
-
         <article className="contact">
             <h2>CONTACT</h2>
             <div className="ligne"></div>
             <p>Feel free to Contact me by mail or by submitting the form below and I will get back to you as soon as possible</p>
             <div className="ligne"></div>
             <h3>My Email</h3>
-            <a href="mailto:mahmoudouaboul@gmail.com">
-                <div onClick={()=>copie} className="adresse-mail">
+            <a onClick={()=>copie()}href="mailto:mahmoudouaboul@gmail.com">
+                <div className="adresse-mail">
                     <p id="mail">mahmoudouabdoul@gmail.com</p>
                     <i id="iconeCopie" className="fa-regular fa-clipboard"></i>
                 </div>

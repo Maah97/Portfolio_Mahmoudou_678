@@ -13,19 +13,19 @@
             "css3"
         ],
         "description": "In this project we are responsible for creating the homepage of a travel agency Booki that will allow users to find accommodation and activities in the city of their choice. This page is responsive and must adapt to different screens (Desktop, tablet and phone) The integration of the site interface is done with HTML and CSS code.",
-        "cover": "http://localhost:3000/static/media/cover_projet_1.9f9cb50545b169f0553a.png",
+        "cover": "/assets/images_booki/cover_projet_1.PNG",
         "pictures": [
-            "http://localhost:3000/static/media/cover_projet_1.9f9cb50545b169f0553a.png",
-            "http://localhost:3000/static/media/Desktop.c4d5564f3750e589ef71.png",
-            "http://localhost:3000/static/media/img.0e84b3e3418216cdb92d.PNG",
-            "http://localhost:3000/static/media/img1.2bdf41f7260eff4ebd83.PNG",
-            "http://localhost:3000/static/media/img2.a944ff658e245f375406.PNG",
-            "http://localhost:3000/static/media/img3.f84ee2de6450c3bd9180.PNG",
-            "http://localhost:3000/static/media/img4.04787c8604418838338b.PNG",
-            "http://localhost:3000/static/media/img5.461d5e763bf4815181af.PNG",
-            "http://localhost:3000/static/media/img6.98790d78beaf3011a6e4.PNG",
-            "http://localhost:3000/static/media/img7.c3d81ed67b7e91af4724.PNG",
-            "http://localhost:3000/static/media/img8.ddcbe344231351a3c2d9.PNG"
+            "/assets/images_booki/cover_projet_1.PNG",
+            "/assets/images_booki/Desktop.png",
+            "/assets/images_booki/img.png",
+            "/assets/images_booki/img1.png",
+            "/assets/images_booki/img2.PNG",
+            "/assets/images_booki/img3.PNG",
+            "/assets/images_booki/img4.PNG",
+            "/assets/images_booki/img5.PNG",
+            "/assets/images_booki/img6.PNG",
+            "/assets/images_booki/img7.PNG",
+            "/assets/images_booki/img8.PNG"
         ]
     },
 
@@ -44,17 +44,17 @@
             "js"
         ],
         "description": "We are tasked for this project with finalizing the front end of the portfolio site of an interior architect named Sophie BLuel. In this project, we used JavaScript to make the site dynamic by making API calls to retrieve and transmit data. We also implemented a login system that saves the authentication token if Sophie is logged in by changing the appearance of the site and giving her the ability to add or remove projects from the site.",
-        "cover": "http://localhost:3000/static/media/imgCoverSophie.c285f023b8684f9d6655.png",
+        "cover": "/assets/images_sophie/imgCoverSophie.png",
         "pictures": [
-            "http://localhost:3000/static/media/imgCoverSophie.c285f023b8684f9d6655.png",
-            "http://localhost:3000/static/media/imgSophie.52232032881add320b94.png",
-            "http://localhost:3000/static/media/imgSophie1.5ce76a1559725b6581c1.png",
-            "http://localhost:3000/static/media/imgSophie2.fb2614d9ecc59344e096.png",
-            "http://localhost:3000/static/media/imgSophie3.f575a305c69ffa701f58.png",
-            "http://localhost:3000/static/media/imgSophie4.c2cb02797ef948c68b22.png",
-            "http://localhost:3000/static/media/imgSophie5.0d85ee3356fc3c0ef77b.png",
-            "http://localhost:3000/static/media/imgSophie6.e658de1d92193351a2a4.png",
-            "http://localhost:3000/static/media/imgSophie7.939a59dabd969b092ffa.png"
+            "/assets/images_sophie/imgCoverSophie.png",
+            "/assets/images_sophie/imgSophie.png",
+            "/assets/images_sophie/imgSophie1.png",
+            "/assets/images_sophie/imgSophie2.png",
+            "/assets/images_sophie/imgSophie3.png",
+            "/assets/images_sophie/imgSophie4.png",
+            "/assets/images_sophie/imgSophie5.png",
+            "/assets/images_sophie/imgSophie6.png",
+            "/assets/images_sophie/imgSophie7.png"
         ]
     },
 
@@ -71,13 +71,13 @@
             "Lighthouse"
         ],
         "description": "In this project, we improved the SEO performance of a photographer's portfolio site to increase the loading speed of the site and its natural referencing in order to appear in the first results of Google. We also corrected some bugs related to the operation of the site but also some accessibility problems so that the site is readable and accessible for all types of users, even those with disabilities.",
-        "cover": "http://localhost:3000/static/media/imgCover.7c4a58c1b46406ed22a9.png",
+        "cover": "/assets/images_Nina/imgCover.png",
         "pictures": [
-            "http://localhost:3000/static/media/imgCover.7c4a58c1b46406ed22a9.png",
-            "http://localhost:3000/static/media/imgNina1.969900d4237e3dc63dfa.png",
-            "http://localhost:3000/static/media/imgNina2.99c30602edc2fc71a588.png",
-            "http://localhost:3000/static/media/imgNina3.04c79664fd79ed36daf2.png",
-            "http://localhost:3000/static/media/imgNina4.d7cb1820cdc3743b30c4.png"
+            "/assets/images_Nina/imgCover.png",
+            "/assets/images_Nina/imgNina1.png",
+            "/assets/images_Nina/imgNina2.png",
+            "/assets/images_Nina/imgNina3.png",
+            "/assets/images_Nina/imgNina4.png"
         ]
     },
 
@@ -95,14 +95,14 @@
             "sass"
         ],
         "description": "Kasa is a peer-to-peer apartment rental company that wanted to create a react web application for their site to present the accommodations and their user ratings. We implemented the React project and developed the entire application, React components, React Router routes, following the Figma mockups (responsive!). We used Sass which is the CSS preprocessor to code the style of the application components",
-        "cover": "http://localhost:3000/static/media/imgCoverKasa.07a6a9da85a95e331363.png",
+        "cover": "/assets/images_kasa/imgCoverKasa.png",
         "pictures": [
-            "http://localhost:3000/static/media/imgCoverKasa.07a6a9da85a95e331363.png",
-            "http://localhost:3000/static/media/imgKasa1.35ee1fd4b2ac4585f337.png",
-            "http://localhost:3000/static/media/imgKasa2.d35bda7f6f502f844d71.png",
-            "http://localhost:3000/static/media/imgKasa3.cc9cba285b920ba7f30b.png",
-            "http://localhost:3000/static/media/imgKasa4.478d0622548f20359fc3.png",
-            "http://localhost:3000/static/media/imgKasa5.6290e3c2730059c21819.png"
+            "/assets/images_kasa/imgCoverKasa.png",
+            "/assets/images_kasa/imgKasa1.png",
+            "/assets/images_kasa/imgKasa2.png",
+            "/assets/images_kasa/imgKasa3.png",
+            "/assets/images_kasa/imgKasa4.png",
+            "/assets/images_kasa/imgKasa5.png"
         ]
     },
 
@@ -120,14 +120,14 @@
             "MongoDB"
         ],
         "description": "In this project, we developed the backend of a book rating site for a bookstore. We implemented all the API routes by respecting a well-defined specification beforehand using NodeJS for the API programming and MongoDB for the database. The BackEnd allows the user to create an account, log in, add, modify or delete a book. Security is also taken into account in this project through the use of authentication tokens.",
-        "cover": "http://localhost:3000/static/media/imgCoverLivre.603ce85e7d1db8396d3c.png",
+        "cover": "/assets/images_livres/imgCoverLivre.png",
         "pictures": [
-            "http://localhost:3000/static/media/imgCoverLivre.603ce85e7d1db8396d3c.png",
-            "http://localhost:3000/static/media/imgLivre.dea0c2f4ea7fac91f6a9.png",
-            "http://localhost:3000/static/media/imgLivre1.24df2a653698d531783f.png",
-            "http://localhost:3000/static/media/imgLivre2.1287101727080528c924.png",
-            "http://localhost:3000/static/media/imgLivre3.fdee697a93eb4ce14c34.png",
-            "http://localhost:3000/static/media/imgLivre4.3405fed884aad9f58e98.png"
+            "/assets/images_livres/imgCoverLivre.png",
+            "/assets/images_livres/imgLivre.png",
+            "/assets/images_livres/imgLivre1.png",
+            "/assets/images_livres/imgLivre2.png",
+            "/assets/images_livres/imgLivre3.png",
+            "/assets/images_livres/imgLivre4.png"
         ]
     },
 
@@ -138,25 +138,25 @@
         "categorie": "Project management with the agile method",
         "link": {
             "github": "",
-            "files": "http://localhost:3000/static/media/Files_of_the_project_Menu_Maker_for_Qwenta.b515173a02f4cad38802.rar"
+            "files": "/assets//Files_of_the_project_Menu_Maker_for_Qwenta.b515173a02f4cad38802.rar"
         },
         "technologie":[
             "Notion"
         ],
         "description": "We planned the development of the qwenta company's menu maker site, which will allow restaurateurs to display and lay out their menus easily in just a few clicks. To do this, we used the agile method to plan the project by defining user stories, technical and functional specifications. We created a Kanban board on Notion that allowed us to assign tasks to the different resources of the project but also allows us to follow the progress of the project in real time. We also set up a technology monitoring system to be able to be up to date with technological developments.",
-        "cover": "http://localhost:3000/static/media/imgCoverQwenta.6c359a2ca29cca4b32fa.png",
+        "cover": "/assets/images_qwenta/imgCoverQwenta.png",
         "pictures": [
-            "http://localhost:3000/static/media/imgCoverQwenta.6c359a2ca29cca4b32fa.png",
-            "http://localhost:3000/static/media/imgQwenta.c1ba929abd19c5953254.png",
-            "http://localhost:3000/static/media/imgQwenta1.decf8daf5600080bbbba.png",
-            "http://localhost:3000/static/media/imgQwenta2.f9777b0f49146785e75e.png",
-            "http://localhost:3000/static/media/imgQwenta3.c3edd90fb219e76dfb89.png",
-            "http://localhost:3000/static/media/imgQwenta4.171fac76b9b261475caf.png",
-            "http://localhost:3000/static/media/imgQwenta5.c4936b5ea1ac05d5531c.png",
-            "http://localhost:3000/static/media/imgQwenta6.9ba37e60c4af9ce9acf9.png",
-            "http://localhost:3000/static/media/imgQwenta7.e2f38642b283ed85f5cd.png",
-            "http://localhost:3000/static/media/imgQwenta8.657f8fd1c29998817b8a.png",
-            "http://localhost:3000/static/media/imgQwenta9.8af832e54c0a32a95a1d.png"
+            "/assets/images_qwenta/imgCoverQwenta.png",
+            "/assets/images_qwenta/imgQwenta.png",
+            "/assets/images_qwenta/imgQwenta1.png",
+            "/assets/images_qwenta/imgQwenta2.png",
+            "/assets/images_qwenta/imgQwenta3.png",
+            "/assets/images_qwenta/imgQwenta4.png",
+            "/assets/images_qwenta/imgQwenta5.png",
+            "/assets/images_qwenta/imgQwenta6.png",
+            "/assets/images_qwenta/imgQwenta7.png",
+            "/assets/images_qwenta/imgQwenta8.png",
+            "/assets/images_qwenta/imgQwenta9.png"
         ]
     }
 ]
