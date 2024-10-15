@@ -16,6 +16,7 @@ function Header() {
                 <a className='navigation' href={`http://${addresseRacine}/#skills`}>SKILLS</a>
                 <a className='navigation' href={`http://${addresseRacine}/#projects`}>PROJECTS</a>
                 <a className='navigation' href={`http://${addresseRacine}/#contact`}>CONTACT</a>
+                <a className='navigation' href="">LOGIN</a>
             </nav>
         </header>
     )

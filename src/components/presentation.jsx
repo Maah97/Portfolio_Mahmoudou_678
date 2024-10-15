@@ -27,10 +27,11 @@ function Presentation() {
                 <div className='image-presentation-et-background'>
                     <img className='ordi' src={ ImgOrdi } alt="Ordinateur de travail d'un developpeur web" />
                     <div className='changement-background'>
-                        <div className='interrupteur-background'></div>
                         <i id='sun' className="fa-solid fa-sun"></i>
                         <i id='moon' className="fa-solid fa-moon"></i>
+                        <div className='interrupteur-background'></div>
                     </div>
+                   
                 </div>
             </div>
             <div className='langage'>

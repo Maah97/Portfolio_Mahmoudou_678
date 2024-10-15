@@ -18,6 +18,7 @@
         @include flexCenter;
         flex-direction: column;
         margin-bottom: 30px;
+        padding: 0px 20px;
         h2 {
             text-align: center;
             font-size: 40px;
@@ -54,16 +55,103 @@
             background-color: #ffffff;
             box-shadow: -4px -4px 10px rgba(0, 0, 0, 0.863);
             p {
-                max-width: 1200px;
+                max-width: 100%;
                 font-size: 20px;
                 text-align: justify;
                 line-height: 40px;
                 font-weight: 450;
                 margin-bottom: 15px;
+                padding: 0px 0px;
                 a {
                     font-weight: bold;
                     text-decoration: none;
                     color: rgba(69, 12, 143, 0.788);
+                }
+            }
+            @media (max-width: 1215px) {
+                max-width: 900px;
+            }
+        }
+        @media (max-width: 1000px) {
+            h2 {
+                font-size: 30px;
+            }
+            .ligne {
+                height: 2px;
+                width: 50px;
+                margin-bottom: 20px;
+                &:nth-child(4) {
+                    width: 150px;
+                    margin-bottom: 40px;
+                }
+            }
+            p {
+                max-width: 600px;
+                font-size: 15px;
+                margin-bottom: 40px;
+                line-height: 25px;
+            }
+            .paragraphes-apropos {
+                width: 700px;
+                padding: 5px 15px;
+                border: 2px solid #666565da;
+                box-shadow: -2px -2px 5px rgba(0, 0, 0, 0.863);
+                p {
+                    max-width: 100%;
+                    font-size: 15px;
+                    line-height: 30px;
+                }
+            }
+        }
+
+        @media (max-width: 725px) {
+            h2 {
+                font-size: 20px;
+            }
+            p {
+                max-width: 400px;
+                font-size: 10px;
+                margin-bottom: 20px;
+                line-height: 15px;
+            }
+            .paragraphes-apropos {
+                width: 500px;
+                padding: 3px 10px;
+                p {
+                    font-size: 10px;
+                    line-height: 20px;
+                }
+            }
+        }
+
+        @media (max-width: 520px) {
+            h2 {
+                font-size: 12px;
+            }
+            .ligne {
+                height: 1px;
+                width: 30px;
+                margin-bottom: 10px;
+                &:nth-child(4) {
+                    height: 0.5px;
+                    width: 80px;
+                    margin-bottom: 20px;
+                }
+            }
+            p {
+                max-width: 400px;
+                font-size: 9px;
+                margin-bottom: 20px;
+                line-height: 15px;
+            }
+            .paragraphes-apropos {
+                width: 300px;
+                padding: 2px 9px;
+                border: 1px solid #666565da;
+                box-shadow: -1px -1px 3px rgba(0, 0, 0, 0.863);
+                p {
+                    font-size: 9px;
+                    line-height: 20px;
                 }
             }
         }

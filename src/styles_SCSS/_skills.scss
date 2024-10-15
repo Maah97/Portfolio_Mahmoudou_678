@@ -23,10 +23,11 @@
         width: 100%;
         padding: 0px 50px;
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
         align-items: center;
         flex-wrap: wrap;
         margin-bottom: 30px;
+        gap: 30px 30px;
         .carte-competence {
             width: 110px;
             height: 100%;
@@ -34,7 +35,7 @@
             flex-direction: column;
             justify-content: space-between;
             align-items: center;
-            padding: 20px 0px;
+            padding: 20px 10px;
             border-radius: 30px;
             cursor: pointer;
             transition: all 0.2s ease-in-out;
@@ -139,6 +140,121 @@
                 img {
                     width: 100px;
                     height: 100px;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 1175px) {
+        .bloc-icones-competences {
+            padding: 0px 25px;
+        }
+    }
+
+    @media (max-width: 725px) {
+        h2 {
+            font-size: 25px;
+        }
+        .ligne {
+            height: 2px;
+            width: 35px;
+            margin-bottom: 30px;
+            margin-top: 5px;
+        }
+        .bloc-icones-competences {
+            justify-content: center;
+            gap: 30px 20px;
+            .carte-competence {
+                width: 70px;
+                padding: 15px 10px;
+                border-radius: 20px;
+                &:hover {
+                    width: 100px;
+                }
+                i {
+                    font-size: 30px;
+                }
+                img {
+                    width: 30px;
+                    height: 30px;
+                }
+                p {
+                    font-size: 10px;
+                }
+            }
+            .html {
+                &:hover {
+                    box-shadow: -1px -1px 25px #a32d1e;
+                    i {
+                        font-size: 50px;
+                    }
+                }
+            }
+            .css {
+                &:hover {
+                    box-shadow: -1px -1px 25px #005ae0;
+                    i {
+                        font-size: 50px;
+                    }
+                }
+            }
+            .sass {
+                &:hover {
+                    box-shadow: -1px -1px 25px #a35353;
+                    i {
+                        font-size: 50px;
+                    }
+                }
+            }
+            .js {
+                &:hover {
+                    box-shadow: -1px -1px 25px #8d7f00;
+                    i {
+                        font-size: 50px;
+                    }
+                }
+            }
+            .react {
+                &:hover {
+                    box-shadow: -1px -1px 25px rgb(73, 187, 231);
+                    i {
+                        font-size: 50px;
+                    }
+                }
+            }
+            .node {
+                &:hover {
+                    box-shadow: -1px -1px 25px #00740a;
+                    i {
+                        font-size: 50px;
+                    }
+                }
+            }
+            .mongodb {
+                &:hover {
+                    box-shadow: -1px -1px 25px #04a711;
+                    img {
+                        width: 50px;
+                        height: 50px;
+                    }
+                }
+            }
+            .lighthouse {
+                &:hover {
+                    box-shadow: -1px -1px 25px #a32d1e;
+                    img {
+                        width: 50px;
+                        height: 50px;
+                    }
+                }
+            }
+            .notion{
+                &:hover {
+                    box-shadow: -1px -1px 25px black;
+                    img {
+                        width: 50px;
+                        height: 50px;
+                    }
                 }
             }
         }
