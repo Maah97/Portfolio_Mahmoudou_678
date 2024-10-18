@@ -73,8 +73,6 @@ function Contact() {
     }, [containRef, options]);
 
     const form = useRef(); 
-    console.log(form.current);
-    
     const sendEmail = (e) => { 
         e.preventDefault(); 
         emailjs.sendForm('service_contact_portfoli', 'template_contact', form.current, 'BKhUj8nCOzHnCW6a7')
