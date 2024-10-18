@@ -1,31 +1,39 @@
-import React, { useState } from 'react';
+import { useEffect, useRef, useMemo } from "react";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from 'react-responsive-carousel';
 
 function Caroussel(props) {
-    const [imgIndex, setImgIndex] = useState(0);
-    function prevImg (){
-        setImgIndex(imgIndex-1);
-        if (imgIndex === 0) {
-            setImgIndex(props.pictures.length-1);
-        }
+    const containRef = useRef(null);
+    const options = useMemo(() => {
+        return {
+            root: null,
+            rootMargin: "0px",
+            threshold: .1
+        };
+    }, [])
+     
+    const handleIntersect = (entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.intersectionRatio > 0.1) {
+                entry.target.classList.add('visible-carousel');
+                observer.unobserve(entry.target);
+            }
+        });
     }
-
-    function nextImg (){
-        setImgIndex(imgIndex+1);
-        if (imgIndex === props.pictures.length-1) {
-            setImgIndex(0);
+    useEffect(() => {
+        const observer = new IntersectionObserver(handleIntersect, options);
+        let contain = document.querySelector('.carousel-root');
+        observer.observe(contain);
+        return () => {
+            observer.unobserve(contain);
         }
-    }
+    }, [containRef, options]);
     return (
-        <div className="caroussel-pitures">
-           <div className='carroussel-container' style={{transform:`translateX(-${imgIndex*100}%)`}}>
-                {props.pictures.map((picture, i) =>
-                    <img key={i} className='pictures' src={picture} alt="apperçus du projet" />
-                )}
-            </div>
-            <div onClick={prevImg} className="fleche-precedent">{props.pictures.length > 1 ? <i className="fa-solid fa-chevron-left"></i> : ""}</div>
-            <p className="pagination">{props.pictures.length > 1 ? `${imgIndex+1}/${props.pictures.length}` : ""}</p>
-            <div onClick={nextImg} className="fleche-suivant">{props.pictures.length > 1 ? <i className="fa-solid fa-chevron-right"></i> : ""}</div>
-        </div>
+        <Carousel autoPlay interval={3000} infiniteLoop showStatus={false} showThumbs={false}>
+            {props.pictures.map((picture, i) =>
+                <img key={i} className='pictures' src={picture} alt="apperçus du projet" />
+            )}
+        </Carousel>
     );
 }
 

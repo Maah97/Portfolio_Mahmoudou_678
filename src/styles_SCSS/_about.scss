@@ -5,6 +5,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    opacity: 0;
     .svg-curve {
         fill: none;
         width: 100%;
@@ -156,4 +157,32 @@
             }
         }
     }
+}
+
+.visible-apropos {
+    opacity: 1;
+}
+.paragraphes-apropos.visible-apropos, .txt-apropos-h2.visible-apropos, .ligne1.visible-apropos, .txt-apropos-p.visible-apropos, .ligne2.visible-apropos {
+    opacity: 1;
+    transform: translateY(0px);
+    transition: all 1s cubic-bezier(0.5, 0, 0, 1);
+}
+
+.paragraphes-apropos, .txt-apropos-h2, .ligne1, .txt-apropos-p, .ligne2 {
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.ligne1 {
+    transition-duration: 0.5s;
+}
+.txt-apropos-p {
+    transition-duration: 1s;
+}
+.ligne2 {
+    transition-duration: 1.5s;
+}
+
+.paragraphes-apropos {
+    transition-duration: 2s;
 }

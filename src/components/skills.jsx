@@ -1,12 +1,51 @@
+import { useEffect, useRef, useMemo } from "react";
 import logoMongoDB from '../assets/mongodb.svg';
 import logoLighthouse from '../assets/lighthouse.svg'
 import logoNotion from '../assets/notion-logo.svg'
 
 function Skills() {
+    const containRef = useRef(null);
+    const ratio = 0.1;
+    const options = useMemo(() => {
+        return {
+            root: null,
+            rootMargin: "0px",
+            threshold: ratio
+        };
+    }, [])
+     
+    const handleIntersect = (entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.intersectionRatio > ratio) {
+                entry.target.classList.add('visible-competences');
+                observer.unobserve(entry.target);
+            }
+        });
+    }
+    useEffect(() => {
+        const observer = new IntersectionObserver(handleIntersect, options);
+        let contain = containRef.current
+        if (containRef.current) {
+            observer.observe(contain);
+            observer.observe(contain.querySelector('.title-skills'));
+            observer.observe(contain.querySelector('.ligne'));
+            contain.querySelectorAll('.carte-competence').forEach((r) => {
+                observer.observe(r);
+            });
+        }
+        return () => {
+            observer.unobserve(contain);
+            observer.observe(contain.querySelector('.title-skills'));
+            observer.observe(contain.querySelector('.ligne'));
+            contain.querySelectorAll('.carte-competence').forEach((r) => {
+                observer.unobserve(r);
+            });
+        }
+    }, [containRef, options]);
     return(
-        <article className="competences">
-            <h2>SKILLS</h2>
-            <div className="ligne"></div>
+        <article ref={containRef} className="competences">
+            <h2 className="title-skills">SKILLS</h2>
+            <div className="ligne ligne-skills"></div>
             <div className="bloc-icones-competences">
                 <div className='carte-competence html'>
                     <i className="fa-brands fa-html5"></i>

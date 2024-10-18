@@ -7,6 +7,7 @@ footer {
     flex-direction: column;
     gap: 30px 30px;
     padding: 0px 0px 70px 0px;
+    opacity: 0;
     .svg-curve {
         fill: none;
         width: 100%;
@@ -88,4 +89,32 @@ footer {
             font-size: 9px;
         }
     }
+}
+
+.visible-footer {
+    opacity: 1;
+}
+
+.svg-curve-footer {
+    opacity: 0;
+}
+
+.svg-curve-footer.visible-footer {
+    opacity: 1;
+}
+
+.contact-reseaux {
+    opacity: 0;
+    transform: translateX(30px);
+}
+
+.droit-reserve {
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.contact-reseaux.visible-footer, .droit-reserve.visible-footer {
+    opacity: 1;
+    transform: translate(0px, 0px);
+    transition: all 1s cubic-bezier(0.5, 0, 0, 1);
 }

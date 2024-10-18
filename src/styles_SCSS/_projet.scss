@@ -6,6 +6,7 @@
     flex-direction: column;
     background-color: #d4d2d2c0;
     padding: 0px 20px;
+    opacity: 0;
     h1 {
         display: flex;
         justify-content: center;
@@ -166,6 +167,36 @@
                 width: 30px;
                 margin-bottom: 7px;
             }
+            .ligne.visible-projet {
+                opacity: 1;
+                transform: translateY(0px);
+            }
         }
     }
 }
+
+.visible-projet {
+    opacity: 1;
+}
+
+.title-projet.visible-projet, .date-et-github.visible-projet, .description.visible-projet {
+    opacity: 1;
+    transform: translateY(0px);
+    transition: all 1.5s cubic-bezier(0.5, 0, 0, 1);
+}
+
+.title-projet {
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.date-et-github {
+    opacity: 0;
+    transform: translateX(-10px);
+}
+
+.description {
+    opacity: 0;
+    transform: translateX(10px);
+}
+

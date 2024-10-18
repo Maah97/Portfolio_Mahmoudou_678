@@ -1,11 +1,40 @@
+import { useEffect, useRef, useMemo } from "react";
 import { Link } from 'react-router-dom';
 import MongoDB from '../assets/mongodb2.svg';
 import Lighthouse from '../assets/lighthouse2.svg'
 import Notion from '../assets/notion-logo.svg'
 
 function CardProjet(props) {
+    const containRef = useRef(null);
+    const ratio = 0.1
+    const options = useMemo(() => {
+        return {
+            root: null,
+            rootMargin: "0px",
+            threshold: ratio
+        };
+    }, [])
+     
+    const handleIntersect = (entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.intersectionRatio > ratio) {
+                entry.target.classList.add('visible-card-projet');
+                observer.unobserve(entry.target);
+            }
+        });
+    }
+    useEffect(() => {
+        const observer = new IntersectionObserver(handleIntersect, options);
+        let contain = containRef.current
+        if (containRef.current) {
+            observer.observe(contain);
+        }
+        return () => {
+            observer.unobserve(contain);
+        }
+    }, [containRef, options]);
     return (
-        <Link to={'/projet/'+ props.id} className="card-projet">
+        <Link ref={containRef} to={'/projet/'+ props.id} className="card-projet">
             <div className='conteneur-card-projet'>
                 <img src={props.imgCover} alt="site booki" className='img-cover' />
                 <p>{props.titre}</p>

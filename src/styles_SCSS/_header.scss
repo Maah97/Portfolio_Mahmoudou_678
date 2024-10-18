@@ -5,9 +5,15 @@ header {
     justify-content: space-between;
     align-items: center;
     position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     background-color: #FFF;
     z-index: 1000;
     border-bottom: 2px solid rgb(33, 0, 59);
+    opacity: 0;
+    transform: translateY(-30px);
     .photo-et-nom {
         display: flex;
         width: 310px;
@@ -52,6 +58,16 @@ header {
             border: rgba(69, 12, 143, 0.788) solid 1px;
         }
     }
+    .menu-hamburger {
+        width: 22px;
+        height: 22px;
+        @include flexCenter;
+        padding: 3px 3px;
+        display: none;
+        i {
+            font-size: 15px;
+        }
+    }
 
     @media (max-width: 1000px) {
         .photo-et-nom {
@@ -74,7 +90,7 @@ header {
         .photo-et-nom {
             margin-left: 12px;
             p {
-                font-size: 8px;
+                font-size: 9px;
                 margin-left: 15px;
             }
             img {
@@ -86,7 +102,7 @@ header {
             margin-right: 10px;
             .navigation {
                 width: 50px;
-                font-size: 8px;
+                font-size: 9px;
             }
         }
     }
@@ -97,7 +113,7 @@ header {
             width: auto;
             margin-left: 8px;
             p {
-                font-size: 5px;
+                font-size: 8px;
                 margin-left: 12px;
             }
             img {
@@ -108,9 +124,47 @@ header {
         nav {
             margin-right: 7px;
             .navigation {
+                margin-left: 15px;
                 width: 30px;
-                font-size: 5px;
+                font-size: 8px;
             }
         }
     }
+
+    @media (max-width: 470px) {
+        .photo-et-nom {
+            p {
+                font-size: 9px;
+            }
+        }
+        nav {
+            display: none;
+            width: 30%;
+            position: absolute;
+            top: 30px;
+            left: 70%;
+            flex-direction: column;
+            height: auto;
+            background-color: white;
+            box-shadow: -3px 3px 10px rgba(0, 0, 0, 0.285);
+            .navigation {
+                height: 25px;
+                border-bottom: 1.5px solid rgb(33, 0, 59);
+                width: 100%;
+                margin-left: 0px;
+            }
+        }
+        nav.active {
+            display: block;
+        }
+        .menu-hamburger {
+            display: flex;
+        }
+    }
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(0px);
+    transition: all 1s cubic-bezier(0.5, 0, 0, 1);
 }

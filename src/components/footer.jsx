@@ -1,11 +1,46 @@
+import { useEffect, useRef, useMemo } from "react";
 import imgTwitter1 from '../assets/logo-twitter.svg';
 
 function Footer() {
     const date = new Date();
     const year = date.getFullYear();
+    const containRef = useRef(null);
+    const ratio = 0.1
+    const options = useMemo(() => {
+        return {
+            root: null,
+            rootMargin: "0px",
+            threshold: ratio
+        };
+    }, [])
+     
+    const handleIntersect = (entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.intersectionRatio > ratio) {
+                entry.target.classList.add('visible-footer');
+                observer.unobserve(entry.target);
+            }
+        });
+    }
+    useEffect(() => {
+        const observer = new IntersectionObserver(handleIntersect, options);
+        let contain = containRef.current
+        if (containRef.current) {
+            observer.observe(contain);
+            observer.observe(contain.querySelector('.svg-curve-footer'));
+            observer.observe(contain.querySelector('.contact-reseaux'));
+            observer.observe(contain.querySelector('.droit-reserve'));
+        }
+        return () => {
+            observer.unobserve(contain);
+            observer.unobserve(contain.querySelector('.svg-curve-footer'));
+            observer.unobserve(contain.querySelector('.contact-reseaux'));
+            observer.unobserve(contain.querySelector('.droit-reserve'));
+        }
+    }, [containRef, options]);
     return (
-        <footer>
-            <svg className="svg-curve" viewBox="0 0 1440 79" xmlns="http://www.w3.org/2000/svg">
+        <footer ref={containRef}>
+            <svg className="svg-curve svg-curve-footer" viewBox="0 0 1440 79" xmlns="http://www.w3.org/2000/svg">
                 <path d="M-100 79C-100 79 218.416 23.165 693.5 23.165C1168.58 23.165 1487 79 1487 79V0H-100V79Z"></path>
             </svg>
             <div className="contact-reseaux">

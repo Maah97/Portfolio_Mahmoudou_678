@@ -4,7 +4,6 @@ import Skills from "../components/skills";
 import Contact from "../components/contact";
 import Projets from "../components/projets";
 
-
 function Home() {
     return (
         <section className="page-accueil">
@@ -14,7 +13,6 @@ function Home() {
             <Projets />
             <Contact />
         </section>
-        
     )
 };
 
