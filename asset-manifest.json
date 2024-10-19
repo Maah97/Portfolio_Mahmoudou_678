@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/portfolio_mahmoudou/static/css/main.1a28709c.css",
+    "main.js": "/portfolio_mahmoudou/static/js/main.181127a4.js",
+    "static/media/ordi.png": "/portfolio_mahmoudou/static/media/ordi.4d5206c0ceb454313d25.png",
+    "static/media/CV_MAHMOUDOU_ANGLAIS.pdf": "/portfolio_mahmoudou/static/media/CV_MAHMOUDOU_ANGLAIS.75aa7c4d63846c122a21.pdf",
+    "static/media/Photo-profil.jfif": "/portfolio_mahmoudou/static/media/Photo-profil.d80dfbfbd74fe14133f6.jfif",
+    "static/media/twitter.png": "/portfolio_mahmoudou/static/media/twitter.6f1a563778f0f271fe58.png",
+    "static/media/lighthouse.svg": "/portfolio_mahmoudou/static/media/lighthouse.d8d9e4162374e5401005b25b9455abf6.svg",
+    "static/media/lighthouse2.svg": "/portfolio_mahmoudou/static/media/lighthouse2.41c7cc256916300cf272574c7c817eb5.svg",
+    "static/media/notion-logo.svg": "/portfolio_mahmoudou/static/media/notion-logo.68df99f12f3888d30d57fe5e47c26e1b.svg",
+    "index.html": "/portfolio_mahmoudou/index.html",
+    "static/media/mongodb.svg": "/portfolio_mahmoudou/static/media/mongodb.20b70ed2d877921fef829dee8193e8ff.svg",
+    "static/media/mongodb2.svg": "/portfolio_mahmoudou/static/media/mongodb2.66e08adb5a87c19ed57f5233267a8b7a.svg",
+    "static/media/logo-twitter.svg": "/portfolio_mahmoudou/static/media/logo-twitter.10d897fdb5d8ab5fb64ee36b763330f6.svg",
+    "main.1a28709c.css.map": "/portfolio_mahmoudou/static/css/main.1a28709c.css.map",
+    "main.181127a4.js.map": "/portfolio_mahmoudou/static/js/main.181127a4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1a28709c.css",
+    "static/js/main.181127a4.js"
+  ]
+}
