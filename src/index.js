@@ -11,7 +11,7 @@ import './styles_SCSS/app.scss';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Router basename="https://Maah97.github.io/portfolio_mahmoudou">
+    <Router basename="https://maah97.github.io/Mahmoudou_Portfolio">
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
