@@ -12,13 +12,17 @@ function Skills() {
             rootMargin: "0px",
             threshold: ratio
         };
-    }, [])
+    }, []);
+
      
     const handleIntersect = (entries, observer) => {
         entries.forEach(entry => {
             if (entry.intersectionRatio > ratio) {
                 entry.target.classList.add('visible-competences');
                 observer.unobserve(entry.target);
+            }
+            if (entry.intersectionRatio === 1) {
+                entry.target.classList.add('transition');
             }
         });
     }

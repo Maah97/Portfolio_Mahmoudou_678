@@ -281,37 +281,32 @@
 
 .carte-competence.html.visible-competences {
     transition-delay: 0.6s;
-    transition-property: opacity transform;
 }
 .carte-competence.css.visible-competences {
     transition-delay: 0.7s;
-    transition-property: opacity transform;
 }
 .carte-competence.sass.visible-competences {
     transition-delay: 0.8s;
-    transition-property: opacity transform;
 }
 .carte-competence.js.visible-competences {
     transition-delay: 0.9s;
-    transition-property: opacity transform;
 }
 .carte-competence.react.visible-competences {
     transition-delay: 1s;
-    transition-property: opacity transform;
 }
 .carte-competence.node.visible-competences {
     transition-delay: 1.1s;
-    transition-property: opacity transform;
 }
 .carte-competence.mongodb.visible-competences {
     transition-delay: 1.2s;
-    transition-property: opacity transform;
 }
 .carte-competence.lighthouse.visible-competences {
     transition-delay: 1.3s;
-    transition-property: opacity transform;
 }
 .carte-competence.notion.visible-competences {
     transition-delay: 1.4s;
-    transition-property: opacity transform;
 }
+
+carte-competence.html.visible-competences.transition, .carte-competence.css.visible-competences.transition, .carte-competence.sass.visible-competences.transition, .carte-competence.js.visible-competences.transition, .carte-competence.react.visible-competences.transition, .carte-competence.node.visible-competences.transition, .carte-competence.mongodb.visible-competences.transition, .carte-competence.lighthouse.visible-competences.transition, .carte-competence.notion.visible-competences.transition {
+    transition-delay: 0s;
+};

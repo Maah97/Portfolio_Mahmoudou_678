@@ -11,11 +11,11 @@ import './styles_SCSS/app.scss';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Router basename="https://maah97.github.io/Mahmoudou_Portfolio">
+    <Router>
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/projet/:id" element={<Projet />} />
+        <Route path="/projects/:id" element={<Projet />} />
         <Route path="*" element={<Error />} />
       </Routes>
       <Footer />

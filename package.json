@@ -2,7 +2,6 @@
   "name": "portfolio_mahmoudou",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Maah97.github.io/portfolio_mahmoudou",
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "@testing-library/jest-dom": "^5.17.0",
@@ -12,6 +11,7 @@
     "react-dom": "^18.3.1",
     "react-responsive-carousel": "^3.2.23",
     "react-router-dom": "^6.26.2",
+    "react-router-hash-link": "^2.4.3",
     "react-scripts": "^5.0.1",
     "sass": "^1.79.4",
     "web-vitals": "^2.1.4"
