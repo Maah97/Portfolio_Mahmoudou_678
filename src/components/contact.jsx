@@ -1,27 +1,31 @@
-import { useEffect, useRef, useMemo } from "react";
+import { useEffect, useRef, useMemo, useContext } from "react";
+import { ThemeContext } from "../context/theme";
 import emailjs from '@emailjs/browser'
+import { useTranslation } from "react-i18next";
 function Contact() {
+    const { t } = useTranslation();
+    const {theme} = useContext(ThemeContext);
     function copie() {
         const email = document.getElementById('mail');
         const icone = document.getElementById('iconeCopie');
         navigator.clipboard.writeText(email.innerText);
-        email.innerText = "Copié dans le presse-papies";
-        email.style.color = "#036300";
+        email.innerText = t("contact.copy");
+        email.classList.add('copie');
         email.style.fontWeight = "500";
         icone.classList.remove('fa-regular');
         icone.classList.remove('fa-clipboard');
         icone.classList.add('fa-solid');
         icone.classList.add('fa-clipboard-check');
-        icone.style.color = "#036300";
+        icone.classList.add('copie');
         setTimeout(()=> {
             email.innerText = "mahmoudouabdoul@gmail.com";
-            email.style.color = "#430199";
+            email.classList.remove('copie');
             email.style.fontWeight = "300";
             icone.classList.add('fa-regular');
             icone.classList.add('fa-clipboard');
             icone.classList.remove('fa-solid');
             icone.classList.remove('fa-clipboard-check');
-            icone.style.color = "#430199";
+            icone.classList.remove('copie');
         },5000)
     }
 
@@ -38,6 +42,7 @@ function Contact() {
     const handleIntersect = (entries, observer) => {
         entries.forEach(entry => {
             if (entry.intersectionRatio > ratio) {
+                entry.target.style.opacity = 1;
                 entry.target.classList.add('visible-contact');
                 observer.unobserve(entry.target);
             }
@@ -87,12 +92,12 @@ function Contact() {
     };
 
     return (
-        <article ref={containRef} className="contact">
+        <article ref={containRef} className={theme==='light' ? "contact" : "contact dark visible"}>
             <h2 className="title-contact-h2">CONTACT</h2>
             <div className="ligne ligne-contact1"></div>
-            <p className="paragraphe-contact-p">Feel free to Contact me by mail or by submitting the form below and I will get back to you as soon as possible</p>
+            <p className="paragraphe-contact-p">{t("contact.paragraphe")}</p>
             <div className="ligne ligne-contact2"></div>
-            <h3 className="my-mail-title">My Email</h3>
+            <h3 className="my-mail-title">{t("contact.email")}</h3>
             <a className="my-mail-copie" onClick={()=>copie()}href="mailto:mahmoudouaboul@gmail.com">
                 <div className="adresse-mail">
                     <p id="mail">mahmoudouabdoul@gmail.com</p>
@@ -100,25 +105,25 @@ function Contact() {
                 </div>
             </a>
             <div className="ligne ligne-important"></div>
-            <h3 className="title-form">Form to submit</h3>
+            <h3 className="title-form">{t("contact.form.title")}</h3>
             <form ref={form} onSubmit={sendEmail} className="formulaire">
                 <div className="label-et-input">
-                    <label htmlFor="name">Name</label>
-                    <input name="name" id="name" type="text" placeholder="Enter your name" />
+                    <label htmlFor="name">{t("contact.form.name")}</label>
+                    <input name="name" id="name" type="text" placeholder={t("contact.form.phname")} />
                 </div>
                 <div className="label-et-input">
                     <label htmlFor="email">Email</label>
-                    <input name="email" id="email" type="mail" placeholder="Enter your email" />
+                    <input name="email" id="email" type="mail" placeholder={t("contact.form.phEmail")} />
                 </div>
                 <div className="label-et-input">
-                    <label htmlFor="title">Title of your project</label>
-                    <input name="title" id="title" type="text" placeholder="Enter the title of your project" />
+                    <label htmlFor="title">{t("contact.form.titleProject")}</label>
+                    <input name="title" id="title" type="text" placeholder={t("contact.form.phTitleProject")} />
                 </div>
                 <div className="label-et-input">
                     <label htmlFor="message">Message</label>
-                    <textarea name="message" id="message" placeholder="Enter your message"></textarea>
+                    <textarea name="message" id="message" placeholder={t("contact.form.phMsg")}></textarea>
                 </div>
-                <input id="submit" type="submit" />
+                <input id="submit" type="submit" value={t("contact.form.submit")} />
             </form>
         </article>
     )

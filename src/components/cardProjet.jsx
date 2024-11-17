@@ -1,12 +1,15 @@
-import React from "react";
+import { React, useContext } from "react";
+import { ThemeContext } from "../context/theme";
 import { HashLink } from "react-router-hash-link";
 import { useEffect, useRef, useMemo } from "react";
-import { Link } from 'react-router-dom';
 import MongoDB from '../assets/mongodb2.svg';
 import Lighthouse from '../assets/lighthouse2.svg'
 import Notion from '../assets/notion-logo.svg'
+import { useTranslation } from "react-i18next";
 
 function CardProjet(props) {
+    const { t } = useTranslation();
+    const {theme} = useContext(ThemeContext);
     const containRef = useRef(null);
     const ratio = 0.1
     const options = useMemo(() => {
@@ -20,6 +23,7 @@ function CardProjet(props) {
     const handleIntersect = (entries, observer) => {
         entries.forEach(entry => {
             if (entry.intersectionRatio > ratio) {
+                entry.target.style.opacity = 1;
                 entry.target.classList.add('visible-card-projet');
                 observer.unobserve(entry.target);
             }
@@ -36,7 +40,7 @@ function CardProjet(props) {
         }
     }, [containRef, options]);
     return (
-        <HashLink ref={containRef} to={'/projects/'+ props.id + '#project'} className="card-projet">
+        <HashLink ref={containRef} to={'/projects/'+ props.id + '#project'} className={theme==='light' ? "card-projet" : "card-projet dark visible"}>
             <div className='conteneur-card-projet'>
                 <img src={props.imgCover} alt="site booki" className='img-cover' />
                 <p>{props.titre}</p>
@@ -54,7 +58,7 @@ function CardProjet(props) {
                     }
                 </div>
             </div>
-            <div className="txt-hover"><p>Voir le projet</p></div>
+            <div className="txt-hover"><p>{t("cardProjet")}</p></div>
         </HashLink>
     )
 };
